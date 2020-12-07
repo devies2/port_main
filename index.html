@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arum's Portfolio</title>
+    <meta name="description" content="Portfolio for software engineer Arum">
+    <meta name="author" content="Arum">
+    <link rel="icon" type="image/png" href="imgs/favicon.png">
+    <script src="https://kit.fontawesome.com/a7c6f7a4be.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav id="navbar">
+        <div class="navbar__logo">
+            <img src="imgs/favicon.png" alt="my logo">
+            <a href="#">Arum</a>
+        </div>
+
+        <ul class="navbar__menu">
+            <li class="navbar__menu__item active" data-link="#home">HOME</li>
+            <li class="navbar__menu__item" data-link="#about">ABOUT</li>
+            <li class="navbar__menu__item" data-link="#skills">SKILLS</li>
+            <li class="navbar__menu__item" data-link="#work">MY WORK</li>
+            <li class="navbar__menu__item" data-link="#contact">CONTACT</li>
+        </ul>
+        <button class="navbar__toggle-btn">
+            <i class="fas fa-bars"></i>
+        </button>
+    </nav>
+    <section id="home">
+        <div class="home__container">
+            <img src="imgs/favicon.png" alt="Arum's profile photo">
+
+            <h1 class="home__title">Hello, I'm Arum !</h1>
+            <p class="home__description">
+                안녕하세요! 방문해 주셔서 감사합니다.<br />
+                본 포트폴리오는 저에 대해 효과적으로 표현하기 위해 제작되었으며,<br/>
+                저의 간단한 이력과 결과물들을 담고 있습니다.
+            </p>
+            <button class="home__contact">Contact Me</button>
+        </div>
+    </section>
+    <section id="about" class="section section__container">
+        <h1>About Me</h1>
+        <div class="about__majors">
+            <div class="major">
+                <div class="major__icon">
+                    <i class="fab fa-gripfire"></i>
+                </div>
+                <h2 class="major__title">Passionate Coder</h2>
+                <div class="major__description">열정적인 코더</div>
+            </div>
+            <div class="major">
+                <div class="major__icon">
+                    <i class="fab fa-apple"></i>
+                </div>
+                <h2 class="major__title">Eager to Grow </h2>
+                <div class="major__description">성장하기 위해 노력하는</div>
+            </div>
+            <div class="major">
+                <div class="major__icon">
+                    <i class="fas fa-seedling"></i>
+                </div>
+                <h2 class="major__title">Steady Growing</h2>
+                <div class="major__description">꾸준히 성장하는</div>
+            </div>
+        </div>
+        <div class="about__scores">
+            <div class="job">
+                <i class="fas fa-award"></i>
+                <div class="job__description">
+                    <p class="job__name">UI/UX 디자인 웹퍼블리셔 & 프론트엔드 과정 수료</p>
+                    <p class="job__period"> 2020.06~2020.12</p>
+                </div>
+            </div>
+            <!-- <div class="job">
+                <i class="fas fa-star"></i>
+                <div class="job__description">
+                    <p class="job__name">TOEIC 905</p>
+                    <p class="job__period"> 2019.03.30</p>
+                </div>
+            </div>
+            <div class="job">
+                <i class="fas fa-graduation-cap"></i>
+                <div class="job__description">
+                    <p class="job__name">인천대학교 생명공학부 졸업</p>
+                    <p class="job__period"> 2019.02.20</p>
+                </div>
+            </div>
+            <div class="job">
+                <i class="fas fa-award"></i>
+                <div class="job__description">
+                    <p class="job__name">펜탁스 마케팅 아이디어 공모전 장려상</p>
+                    <p class="job__period"> 2015.12.31</p>
+                </div>
+            </div> -->
+        </div>
+    </section>
+    <section id="skills" class="section">
+        <div class="section__container">
+            <h1>Skills</h1>
+            <h2>Skills &amp; Attributes </h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat, neque officia aut omnis sunt tempore.
+                Natus inventore nemo reprehenderit voluptatem ad facere veniam necessitatibus sapiente fuga nesciunt
+                dolore,
+                possimus molestias.</p>
+            <div class="skillset">
+                <div class="skillset__left">
+                    <h3 class="skillset__title">Skills</h3>
+                    <div class="skill">
+                        <div class="skill__description">
+                            <span>HTML</span>
+                            <span>90%</span>
+                        </div>
+                        <div class="skill__bar">
+                            <div class="skill__value v1" data-skill="90" ></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill__description">
+                            <span>CSS</span>
+                            <span>80%</span>
+                        </div>
+                        <div class="skill__bar">
+                            <div class="skill__value v2" data-skill="80"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill__description">
+                            <span>Javascript</span>
+                            <span>70%</span>
+                        </div>
+                        <div class="skill__bar">
+                            <div class="skill__value v3" data-skill="70"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill__description">
+                            <span>React</span>
+                            <span>50%</span>
+                        </div>
+                        <div class="skill__bar">
+                            <div class="skill__value v4" data-skill="50" ></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill__description">
+                            <span>jQuery</span>
+                            <span>70%</span>
+                        </div>
+                        <div class="skill__bar">
+                            <div class="skill__value v5" data-skill="70"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skillset__right">
+                    <div class="tools">
+                        <h3 class="skillset__title">Tools</h3>
+                        <ul class="tools__list">
+                            <li>
+                                <span>Visual Studio Code</span>
+                                <span>Adobe Photoshop</span>
+                                <span>Power Point</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="etc">
+                        <h3 class="skillset__title">Etc</h3>
+                        <ul class="etc__list">
+                            <li>
+                                <span>Git</span>
+                                <span>Post CSS</span>
+                                <span>PostMan</span>
+                                <span>React Hook</span>
+                                <span>BEM</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="work" class="section">
+        <h1>My work</h1>
+        <h3>Projects</h3>
+        <div class="work__categories">
+            <button class="category__btn selected" data-filter="*">
+                All<span class="category__count">6</span>
+            </button>
+            <button class="category__btn" data-filter="vanilla">
+                JS<span class="category__count">2</span>
+            </button>
+            <button class="category__btn" data-filter="jQuery">
+                JS+jQuery<span class="category__count">2</span>
+            </button>
+            <button class="category__btn" data-filter="react">
+                React<span class="category__count">1</span>
+            </button>
+        </div>
+        <div class="work__projects">
+            <a href="#none" class="project" target="_blank" data-type="jQuery">
+                <img class="project__img" src="imgs/projects/project1.png" alt="프로젝트1">
+                <div class="project__description">
+                    <h3>인스타그램 클론</h3>
+                    <span>HTML CSS JS jQuery</span>
+                    <span>2020.06, 12</span>
+                </div>
+            </a>
+            <a href="https://devies2.github.io/port1_milkway/" class="project" target="_blank" data-type="jQuery">
+                <img class="project__img" src="imgs/projects/project2.png" alt="프로젝트2">
+                <div class="project__description">
+                    <h3>Milky Way</h3>
+                    <span>HTML CSS JS jQuery</span>
+                    <span>2020.07 ~ 2020.09</span>
+                </div>
+            </a>
+            <a href="https://devies2.github.io/port_gyangnam/" class="project" target="_blank" data-type="vanilla">
+                <img class="project__img" src="imgs/projects/project3.png" alt="프로젝트3">
+                <div class="project__description">
+                    <h3>&lt;only 모바일&gt; 걍남</h3>
+                    <span>HTML CSS vanilla JS</span>
+                    <span>2020.10 ~ 2020.11</span>
+                </div>
+            </a>
+
+            <a href="https://devies2.github.io/port_todolist/" class="project" target="_blank" data-type="vanilla">
+                <img class="project__img" src="imgs/projects/project4.png" alt="프로젝트4">
+                <div class="project__description">
+                    <h3>&lt;Mini Project&gt; To do list</h3>
+                    <span>HTML CSS vanilla JS</span>
+                    <span>2020.12 ~ 2020.12</span>
+                </div>
+            </a>
+            <a href="https://devies2.github.io/port_flower/#/" class="project" target="_blank" data-type="react">
+                <img class="project__img" src="imgs/projects/project5.png" alt="프로젝트5">
+                <div class="project__description">
+                    <h3>&lt;ing..&gt;Maison de fleurs</h3>
+                    <span>HTML CSS vanilla JS</span>
+                    <span>2020.12 ~ 2020.12</span>
+                </div>
+            </a>
+        </div>
+    </section>
+    <section id="contact" class="section">
+        <h1 class="contact__title">Let's talk</h1>
+        <h2 class="contact__email">cattys@gmail.com</h2>
+        <div class="contact__links">
+            <a href="https://github.com/devies2" target="_blank">
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="tel:010-4172-2716" target="_blank">
+                <i class="fas fa-mobile-alt"></i>
+            </a>
+        </div>
+        <p class="contact__rights">
+            2020 Arum - All rights reserved
+        </p>
+    </section>
+    <div class="arrow-up">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
